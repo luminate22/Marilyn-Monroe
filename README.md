@@ -1,2 +1,14 @@
-# Marilyn-Monroe
-Marilyn Monroe Tribute 
+class HelloMessage extends React.Component {
+  render() {
+    return (
+      <div>
+        Hello {this.props.name}
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <HelloMessage name="Mario" />,
+  document.getElementById('hello-example')
+);
